@@ -1,0 +1,85 @@
+@media only screen and  (min-width:350px) and (max-width:560px){
+
+
+    header{
+     display: none;
+     visibility: hidden;
+    }
+   
+   
+    
+    .nav-bar{
+     display: none;
+    }
+  
+    .nav
+    .nav-items{
+      display: none;
+      visibility: hidden;
+    }
+   
+    main{
+        height: 500px;
+        width:100%;
+       
+        border: 3px solid blue; 
+       display: flex;
+       flex-flow: row;
+    }
+    main h1{
+        position: relative;
+        font-size: medium;
+        margin-left: 50px;
+    }
+    main .btn {
+        margin-left: 10px;
+        height:50px;
+    }
+    .sec-consult{
+    display: none;
+    visibility: hidden;
+    }
+     
+    .sec-about{
+        height: 200px;
+        display: flex;
+        flex-flow: column;
+        width:100%;
+        border: 3px solid red;
+        text-align: center;
+        font-size: smaller;
+    }
+    .sec-info{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width:100%;
+        border: 3px solid red;
+    }
+    .block-info{
+        display: flex;
+        flex-flow: column;
+        height: 200px;
+        width:70%;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        border: 3px solid red;
+    }
+    .block-info img{
+        height: 40px;
+        width: 40px;
+        margin-left:110px;
+    }
+    p{
+        font-size: smaller
+    }
+    
+
+
+
+
+
+
+
+}

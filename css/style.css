@@ -1,0 +1,213 @@
+/* Box Model Hack */
+*,
+*::after,
+*::before{
+
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+    clear: both;
+}
+body{
+    width: 100%;
+   font-family: 'Poppins', sans-serif;;
+}
+:root{
+
+    --color-dark-blue:#083346;
+    ---color-dark-light-blue:#046C95;
+   ---color-lightest-blue:#B3E0EE;
+
+}
+header{
+    border:3px solid #EEEEEE;
+    height:40px;
+    width:100%;
+    background-color: #EEEEEE;
+}
+header span{
+    margin-left: 100px;
+    margin-top: 5px;
+    color: grey;
+}
+li{
+    list-style:none ;
+    cursor: pointer;
+}
+.btn{
+    width:150PX;
+    height:60px;
+    text-align: center;
+    cursor: pointer;
+    display: inline;
+    background-color: var(--color-dark-blue);
+    border: 3px solid var(--color-dark-blue);
+   
+}
+.btn span{
+    margin-left: 0px;
+    color: white;
+    
+}
+header input{
+    margin-left: 600px;
+    border: none;
+    height:30px;
+    width:200px;
+}
+.nav-bar{
+    height: 150px;
+    width:70%;
+    border: 2px solid #EEEEEE;
+    
+    display: flex;
+    flex-flow: row;
+    margin-left: 250px;
+    z-index: 7;
+    position: absolute;
+    
+}
+.nav-top{
+    display: flex;
+    flex-flow: row;
+}
+.nav-top img{
+    height:130px;
+}
+.nav-top h2{
+   margin:20px;
+   margin-left: 460px;;
+}
+.nav-items .btn{
+    background-color: var(--color-dark-blue);
+    border: 3px solid var(--color-dark-blue);
+    height:100px;
+}
+.btn-active{
+    
+    width:150PX;
+    height:150px;
+    text-align: center;
+    cursor: pointer;
+    display: inline;
+    background-color: var(---color-dark-light-blue);
+    border: 3px solid var(---color-dark-light-blue);
+}
+
+.nav-items{
+    height: 60px;
+    width:100%;
+    margin-top: 85px;
+    background-color: var(--color-dark-blue);
+    border: 3px solid var(--color-dark-blue);
+    white-space: nowrap;
+    margin-left: -610px;
+}
+.nav-items li{
+    display: inline;
+    line-height: 50px;
+    letter-spacing: 3px;
+    height: 60px;
+    
+}
+.nav-items li > a{
+    margin-left:20px;
+    text-align: center;
+    color: white;
+}
+.nav-items div{
+    height:500px;
+   text-align: center;
+}
+main{
+    height: 500px;
+    width:100%;
+  margin-top: 100px;
+    /* border: 2px solid #EEEEEE; */
+   display: flex;
+   flex-flow: row;
+   background-image: url('../img/sean-pollock-PhYq704ffdA-unsplash.jpg');
+   background-size: cover;
+}
+main .btn {
+    text-align: center;
+    display: inline;
+    margin-left: 20px;
+    margin-top: 250px;
+}
+main h1{
+    text-align: center;
+    font-size: 250%;
+    font-weight: bolder;
+    margin-top: 100px;
+    margin-left: 550px;
+    position: absolute;
+    
+}
+.sec-consult{
+    height: 100px;
+    width:100%;
+  background-color: var(---color-dark-light-blue);
+  color: white;
+    display: flex;
+    flex-flow: row;
+}
+.sec-consult .btn{
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.sec-consult p{
+    margin-left: 200px;;
+}
+.sec-consult h3{
+   margin-left: 100px;
+  
+   
+}
+.two{
+    background-color: #083346;
+    color: white;
+    border: 3px solid var(--color-dark-blue);
+}
+.sec-about{
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    width:100%;
+    border: 3px solid red;
+    text-align: center;
+}
+
+.sec-info{
+    display: flex;
+    height: 500px;
+    width:100%;
+    border: 3px solid red;
+}
+.block-info img{
+    height:50px;
+}
+.block-info{
+    display: flex;
+    flex-flow: row;
+    height: 300px;
+    width:20%;
+    margin-top: 30px;
+    margin-left: 250px;
+    border: 3px solid red;
+}
+.one{
+    margin-left: 0px;
+}
