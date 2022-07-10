@@ -1,4 +1,4 @@
-@media only screen and  (min-width:350px) and (max-width:560px){
+@media only screen  and (max-width:560px){
 
 
     header{
@@ -9,77 +9,651 @@
    
     
     .nav-bar{
-     display: none;
+      
+    }
+    
+    .nav-top h2{
+       
+       margin-left: -120px;
+      margin-top: -60px;
+       
     }
   
-    .nav
+  
     .nav-items{
       display: none;
       visibility: hidden;
     }
    
     main{
-        height: 500px;
+        height: 150px;
         width:100%;
-       
-        border: 3px solid blue; 
        display: flex;
-       flex-flow: row;
+       flex-flow: column;
+       background-image: none;
+      
+       background-color: var(---color-dark-light-blue)
     }
     main h1{
-        position: relative;
-        font-size: medium;
-        margin-left: 50px;
+        display: none;
+        visibility: hidden;
+       
+        animation:none;
+        border-right: none;
     }
-    main .btn {
-        margin-left: 10px;
-        height:50px;
+    main h3{
+        color: #EEEEEE;
+        font-weight: bolder;
+        visibility: visible;
+        text-decoration: overline;
+        margin:50px;
+        margin-left: 100px;
+      
     }
+   .btn-main ,.btn-main-two {
+        display: none;
+        visibility: hidden;
+    }
+    
+   
     .sec-consult{
     display: none;
     visibility: hidden;
     }
      
     .sec-about{
-        height: 200px;
+        height: 300px;
         display: flex;
         flex-flow: column;
         width:100%;
-        border: 3px solid red;
+        
+        background-color: #EEEEEE;
+        color: var(--color-dark-blue);
         text-align: center;
         font-size: smaller;
+    }
+    .sec-para{
+        text-align: center;
+        margin-left: 100px;
+
+    }
+    .btn{
+        margin-left: 10px;
+    }
+    .line{
+        background-color: var(---color-dark-light-blue);
+        height: 3px;
+        width: 80px;
+        margin-left: 150px;
     }
     .sec-info{
         display: flex;
         flex-direction: column;
         height: 800px;
         width:100%;
-        border: 3px solid red;
+      
     }
     .block-info{
         display: flex;
         flex-flow: column;
         height: 200px;
-        width:70%;
+        width:90%;
         text-align: center;
         margin-top: 30px;
-        margin-left: 10px;
-        border: 3px solid red;
+        margin-left: 20px;
+        color: black;
+        /* border: 3px solid red; */
     }
     .block-info img{
         height: 40px;
         width: 40px;
-        margin-left:110px;
+        margin-left:150px;
+    }
+    .block-info h3{
+        font-size: small;
     }
     p{
         font-size: smaller
     }
+    .sec-stats{
+        display: none;
+        visibility: hidden;
+    }
+    .sec-industry{
+        visibility: hidden;
+        display: none;
+    }
+    .sec-call{
+        height:320px;
+        
+        width:100%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        background-color: #EEEEEE;
+    }
+    .sec-call h2{
+        margin-top: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color:var(--color-dark-blue);
+        
+    }
+  
+    .sec-call p{
+        visibility: hidden;
+        display: none;
+    }
     
+    form{
+        height:50px;
+        /* border: 3px solid red;  */
+        width:70%;
+        display: flex;
+        flex-flow: column;
+        margin-top: -50px;
+        margin-left: 50px;
+    }
+    form > input{
+        margin-top: 10px;;
+        margin-left:5px;
+        height:50px;
+        width:90%;
+    }
+    form .btn{
+        margin-left:50px;
+        height:30px;
+        margin-top:10px ;
+    }
+    .sec-logo{
+      
+        display: flex;
+        flex-flow: column;
+        height:300px;
+        
+    }
+    .sec-logo img{
+        margin-left: 110px;
+        width:150px;
+        height:50px
+    }
+    footer{
+        height:200px;
+        background-color: var(--color-dark-blue);
+        width:100%;
+      
+       display:grid;
+       grid-template-columns: 50px 50px;
+       grid-template-rows: 100px 100px;
+       gap: 30px 100px;
+       height: 900px;
+   
+    }
+    footer h1{
+        margin-top: 50px;
+        margin-left: 30px;
+        color: var(---color-dark-light-blue);
+        margin-right: 50px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .sec-footer{
+        /* border:3px solid red; */
+       
+      
+        margin-left: 50px;
+        border: 3px solid var(--color-dark-blue);
+        margin-top: 50px;
+        width:130px;
+        height:100px;
+       
+       
+    }
+   .BRAND{
+      display: none;
+      visibility: hidden;
+   }
+   
+
+}
 
 
 
 
+@media only screen  and (max-width:900px){
+    header{
+        border:3px solid #EEEEEE;
+        height:40px;
+        width:100%;
+        background-color: #EEEEEE;
+    }
+    header span{
+        margin-left: 10px;
+        margin-top: 5px;
+        color: grey;
+    }
+    li{
+        list-style:none ;
+        cursor: pointer;
+    }
+    .btn{
+        width:150PX;
+        height:60px;
+        text-align: center;
+        cursor: pointer;
+        display: inline;
+        background-color: var(--color-dark-blue);
+        border: 3px solid var(--color-dark-blue);
+        font-weight: bolder;
+    }
+    .btn span{
+        margin-left: 0px;
+        color: white;
+        
+    }
+    span:hover{
+        color: var(---color-dark-light-blue);
+    }
+    header input{
+        margin-left: 100px;
+        border: none;
+        height:30px;
+        width:200px;
+    }
+    .nav-bar{
+        height: 150px;
+        width:90%;
+        /* border: 2px solid #EEEEEE; */
+       
+        display: flex;
+        flex-flow: row;
+        margin-left: 50px;
+        z-index: 7;
+        position: absolute;
+        
+    }
+    .nav-top{
+        display: flex;
+        flex-flow: row;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: larger;
+    }
+    .nav-top img{
+        height:130px;
+    }
+    .nav-top h2{
+       margin:20px;
+       margin-left: 300px;;
+       color:var(---color-dark-light-blue)
+    }
+    .nav-items .btn{
+        background-color: var(--color-dark-blue);
+        border: 3px solid var(--color-dark-blue);
+        height:100px;
+    }
+    .btn-active{
+        
+        width:150PX;
+        height:150px;
+        text-align: center;
+        cursor: pointer;
+        display: inline;
+        color: var(---color-dark-light-blue);
+        letter-spacing: 5px;
+        font-weight: bolder;
+        margin-left: 20px;
+        
+    }
+    
+    .btn-active:hover{
+        color:white;
+        
+    }
+    .nav-items{
+        height: 60px;
+        width:100%;
+        margin-top: 85px;
+        background-color: var(--color-dark-blue);
+        border: 3px solid var(--color-dark-blue);
+        white-space: nowrap;
+        margin-left: -480px;
+    }
+    .nav-items li{
+        display: inline;
+        line-height: 50px;
+        letter-spacing: 3px;
+        height: 60px;
+       
+        
+    }
+    .nav-items li > a{
+        margin-left:10px;
+        text-align: center;
+        color: white;
+    
+    }
+    .nav-items li > a:hover{
+        color:var(---color-dark-light-blue)
+    }
+    .nav-items div{
+        height:500px;
+       text-align: center;
+    }
+    main{
+        height: 400px;
+        width:100%;
+      margin-top: 90px;
+        /* border: 2px solid #EEEEEE; */
+       display: flex;
+       flex-flow: row;
+    
+       background-image: url('../img/marilyn-huang-5wEVuAJ5kJY-unsplash.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .btn-main , .btn-main-two {
+        width:150px;
+        height:40px;
+        text-align: center;
+        cursor: pointer;
+        display: inline;
+        background-color: var(--color-dark-blue);
+        border: 3px solid var(--color-dark-blue);
+        color: white;
+       
+       
+        margin-top: 250px;
+    }
+    .btn-main{
+    
+        margin-left: -180px;
+    
+    }
+    .btn-main-two{
+        margin-left: 20px;
+       font-weight: bolder;
+    }
+    .btn-main > span{
+        margin-top: 100px;
+        font-weight: bolder;
+    }
+    main h1{
+        text-align: center;
+        font-size: 200%;
+        font-weight: bolder;
+        margin-top: 100px;
+        margin-left: 80px;
+        position: absolute;
+        color: var(--color-dark-blue);
+        font-family: 'Source Sans Pro', sans-serif;
+      
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: none;
+        animation: none
 
-
-
+    }
+    main h3{
+        visibility: hidden;
+    }
+    .sec-consult{
+        height: 150px;
+        width:100%;
+      background-color: var(---color-dark-light-blue);
+      color: white;
+        display: flex;
+        flex-flow: column;
+      
+    }
+    
+    .sec-consult .btn{
+        height: 40px;
+        margin-left: 700px;
+        margin-top: 10px;
+    }
+    .sec-consult p{
+       text-align: center;
+       margin-top:20px;
+    
+       
+    }
+    
+    .two{
+        background-color: var(---color-lightest-blue);
+        color: white;
+      
+    }
+    .sec-about{
+        height: 250px;
+        display: flex;
+        flex-flow: column;
+        width:100%;
+        /* border: 3px solid red; */
+        text-align: center;
+    }
+    .sec-about h1{
+        margin-top:50px;
+    }
+    .sec-about p{
+        margin: 20px;
+        text-align: center;
+       
+    }
+    .sec-para{
+        height:100px;
+        width:50%;
+        /* border: 3px solid red; */
+        margin-left: 200px;
+    }
+    .line{
+        background-color: var(---color-dark-light-blue);
+        height: 3px;
+        width: 80px;
+        margin-left: 720px;
+    }
+    .sec-info{
+        display: flex;
+        height: 400px;
+        width:100%;
+        
+    }
+    .block-info img{
+        height:50px;
+        width: 50px;
+        margin: 10px;
+        margin-left: 100px;
+      
+    }
+    .block-info{
+        display: flex;
+        flex-flow: column;
+        height: 250px;
+        width:30%;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 50px;
+        box-shadow: 5px 5px 5px #EEEEEE ;
+        color: var(--color-dark-blue);
+        cursor: pointer;
+    }
+    .one{
+        margin-left: 0px;
+    }
+    .sec-stats{
+        height:300px;
+        /* border: 3px solid red; */
+        width:100%;
+        display: flex;
+        flex-flow: row;
+       background-image: url('../img/alesia-kazantceva-iYoAPaSPBKI-unsplash.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .sec-stats h3{
+        color:var(--color-dark-blue);
+        font-size: 350%
+    }
+    .sec-stats-items{
+        height:100px;
+        /* border: 3px solid red; */
+        box-shadow: 5px 5px 5px var(---color-dark-light-blue) ;
+        width:20%;
+        display: flex;
+        margin-top: 100px;
+        margin-left: 10px;
+        flex-flow: column;
+        background-color: var(---color-lightest-blue);
+        color: var(--color-dark-blue);
+        text-align: center;
+    }
+    .sec-stats-items img{
+       height:30px;
+       width:30px;
+       margin-left:70px;
+    }
+    .sec-stats-items-one{
+        height:100px;
+        /* border: 3px solid red; */
+        width:20%;
+        display: flex;
+        margin-top: 100px;
+        margin-left: 50px;
+        flex-flow: column;
+        text-align: center;
+        background-color: var(---color-lightest-blue);
+        box-shadow: 5px 5px 5px var(---color-dark-light-blue) ;
+        color: var(--color-dark-blue);
+        
+    }
+    .sec-stats-items-one img{
+          height:30px;
+       width:30px;
+       margin-left:70px;
+    }
+    .sec-industry{
+        height:800px;
+        text-align: center;
+        width:100%;
+        display: flex;
+        flex-flow: column;
+        
+        
+    }
+    .sec-industry h2{
+        margin-top: 50px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: var(--color-dark-blue);
+        font-size: 250%;
+    }
+    .sec-industry .line{
+        margin-left: 80px;
+        margin-top: 5px;
+    }
+    .sec-industry p{
+        margin-top: 15px;;
+    }
+    .grid-con{
+        display:grid;
+        grid-template-columns: 80px 80px 80px ;
+        grid-template-rows: 100px 100px 100px ;
+        gap: 200px 200px;
+        height: 900px;
+        justify-items: center;
+        margin-left: 80px;
+        
+        margin-top: 50px;
+    }
+    .sec-items{
+        height:250px;
+        /* border: 3px solid red;  */
+        box-shadow: 5px 5px 5px #EEEEEE ;
+        cursor: pointer;
+        width:230px;
+    }
+    .sec-call{
+        height:300px;
+        
+        width:100%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        background-color: #EEEEEE;
+    }
+    .sec-call h2{
+        margin-top: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color:var(--color-dark-blue);
+        
+    }
+    .sec-call p{
+        margin-top: 20px;
+        font-size: smaller;
+    }
+    form{
+        height:30px;
+        /* border: 3px solid red;  */
+        width:70%;
+        display: flex;
+        flex-flow: row;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    form > input{
+        margin-left:50px;
+        height:30px;
+        width:250px;
+    }
+    form .btn{
+        margin-left:50px;
+        height:30px;
+        margin-top:-2px ;
+    }
+    .sec-logo{
+        height:100px;
+        /* border: 3px solid red;  */
+        width:100%;
+        display: flex;
+        flex-flow: row;
+        
+        
+    }
+    .sec-logo img{
+        height:50px;
+        margin: 20px;
+        margin-left: 250px;
+    }
+    footer{
+        height:300px;
+        background-color: var(--color-dark-blue);
+        width:100%;
+        display: flex;
+        flex-flow: row;
+    }
+    footer h1{
+        margin-top: 80px;
+        margin-left: 50px;
+        color: var(---color-dark-light-blue);
+        margin-right: 50px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .sec-footer{
+        /* border:3px solid red; */
+        display: flex;
+        flex-flow: column;
+        width:130px;
+        height:100px;
+        margin: 50px;
+        color: white;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .foot{
+       
+    
+    }
+    .BRAND{
+        margin-top: 250px;
+        color: grey;
+       margin-left: -600px;
+       text-decoration: overline;
+    }
+    
 }
