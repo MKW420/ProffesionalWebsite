@@ -1,4 +1,5 @@
-@media only screen  and (max-width:560px){
+
+@media only screen and (max-width:560px){
 
 
     header{
@@ -9,13 +10,15 @@
    
     
     .nav-bar{
-      
-    }
-    
-    .nav-top h2{
        
-       margin-left: -120px;
-      margin-top: -60px;
+        visibility: hidden;
+    }
+ 
+    .nav-top h2{
+       visibility: visible;
+     
+        margin-top: -50px;
+      margin-left: -120px;
        
     }
   
@@ -32,7 +35,7 @@
        flex-flow: column;
        background-image: none;
       
-       background-color: var(---color-dark-light-blue)
+       background-color: var(---color-dark-light-blue);
     }
     main h1{
         display: none;
@@ -218,7 +221,7 @@
 
 
 
-@media only screen  and (max-width:900px){
+@media only screen and (min-width:700px) and (max-width:900px){
     header{
         border:3px solid #EEEEEE;
         height:40px;
@@ -268,6 +271,7 @@
         margin-left: 50px;
         z-index: 7;
         position: absolute;
+        visibility: visible;
         
     }
     .nav-top{
@@ -406,7 +410,7 @@
     
     .sec-consult .btn{
         height: 40px;
-        margin-left: 700px;
+        margin-left: 350px;
         margin-top: 10px;
     }
     .sec-consult p{
@@ -590,7 +594,7 @@
     form{
         height:30px;
         /* border: 3px solid red;  */
-        width:70%;
+        width:80%;
         display: flex;
         flex-flow: row;
         margin-top: 50px;
@@ -602,8 +606,9 @@
         width:250px;
     }
     form .btn{
-        margin-left:50px;
+        margin-left:10px;
         height:30px;
+        width:200px;
         margin-top:-2px ;
     }
     .sec-logo{
@@ -618,7 +623,7 @@
     .sec-logo img{
         height:50px;
         margin: 20px;
-        margin-left: 250px;
+        margin-left: 80px;
     }
     footer{
         height:300px;
@@ -642,7 +647,7 @@
         height:100px;
         margin: 50px;
         color: white;
-        margin-left: 5px;
+        margin-left: -25px;
         cursor: pointer;
     }
     .foot{
@@ -652,8 +657,17 @@
     .BRAND{
         margin-top: 250px;
         color: grey;
-       margin-left: -600px;
+       margin-left: -500px;
        text-decoration: overline;
     }
     
+}
+
+@media only screen and (min-width:901px) and (max-width:1500px){
+
+.grid-con{
+    margin-left: 750px;
+    
+}
+
 }
